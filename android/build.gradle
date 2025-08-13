@@ -1,0 +1,19 @@
+buildscript {
+    ext {
+        buildToolsVersion = "36.0.0"    // 설치된 버전으로
+        compileSdkVersion = 36
+        targetSdkVersion = 36
+        minSdkVersion = 24
+        ndkVersion = "27.1.12297006"    // 반드시 존재
+        kotlinVersion = "1.9.10"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.0.2")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+    }
+}
