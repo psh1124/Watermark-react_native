@@ -10,8 +10,7 @@ const config = {};
 
 <<<<<<< HEAD
 module.exports = mergeConfig(getDefaultConfig(__dirname), config);
-=======
+
 module.exports = mergeConfig(getDefaultConfig(__dirname), {
   resetCache: true,
 });
->>>>>>> b57a04d (cmd오류 해결중, 로그인 api)
